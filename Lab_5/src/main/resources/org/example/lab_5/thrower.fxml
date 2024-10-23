@@ -9,13 +9,10 @@
         <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
     </padding>
 
-    <!-- Первое поле для ввода -->
     <TextField fx:id="firstTextField"/>
 
-    <!-- Кнопка с динамической стрелкой -->
     <Button fx:id="swapButton" text="⟶" onAction="#swapText"/>
 
-    <!-- Второе поле для ввода -->
     <TextField fx:id="secondTextField"/>
 
 </VBox>
