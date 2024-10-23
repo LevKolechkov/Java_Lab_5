@@ -9,7 +9,7 @@ import java.io.IOException;
 
 public class Controller {
     public void openPerekidivatel() throws IOException {
-        openNewForm("perekidivatel.fxml", "Перекидыватель");
+        openNewForm("thrower.fxml", "Перекидыватель");
     }
 
     public void openWidgets() throws IOException {
