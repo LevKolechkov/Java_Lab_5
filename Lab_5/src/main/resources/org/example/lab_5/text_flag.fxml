@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER" spacing="10.0" xmlns:fx="http://javafx.com/fxml" fx:controller="org.example.lab_5.TextFlagController">
+    <padding>
+        <Insets top="20.0" right="20.0" bottom="20.0" left="20.0"/>
+    </padding>
+
+    <!-- Заголовок окна -->
+    <Label text="Выберите цвет для каждой полосы флага"/>
+
+    <!-- Первая полоса -->
+    <Label text="Первая полоса"/>
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <RadioButton fx:id="stripe1Red" text="Красный" GridPane.columnIndex="0" />
+        <RadioButton fx:id="stripe1Blue" text="Синий" GridPane.columnIndex="1" />
+        <RadioButton fx:id="stripe1Green" text="Зелёный" GridPane.columnIndex="2" />
+    </GridPane>
+
+    <!-- Вторая полоса -->
+    <Label text="Вторая полоса"/>
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <RadioButton fx:id="stripe2Yellow" text="Жёлтый" GridPane.columnIndex="0" />
+        <RadioButton fx:id="stripe2Black" text="Чёрный" GridPane.columnIndex="1" />
+        <RadioButton fx:id="stripe2White" text="Белый" GridPane.columnIndex="2" />
+    </GridPane>
+
+    <!-- Третья полоса -->
+    <Label text="Третья полоса"/>
+    <GridPane hgap="10" vgap="10" alignment="CENTER">
+        <RadioButton fx:id="stripe3Orange" text="Оранжевый" GridPane.columnIndex="0" />
+        <RadioButton fx:id="stripe3Grey" text="Серый" GridPane.columnIndex="1" />
+        <RadioButton fx:id="stripe3Purple" text="Фиолетовый" GridPane.columnIndex="2" />
+    </GridPane>
+
+    <!-- Кнопка для вывода сообщения -->
+    <Button text="Нарисовать" onAction="#drawFlag"/>
+
+    <!-- Поле для отображения сообщения -->
+    <Label fx:id="resultLabel" text="Здесь будет результат"/>
+
+</VBox>
