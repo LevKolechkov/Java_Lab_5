@@ -27,10 +27,6 @@ public class OrderController {
     @FXML
     private Spinner<Integer> dish3Spinner;
 
-    private final int priceDish1 = 500;
-    private final int priceDish2 = 300;
-    private final int priceDish3 = 200;
-
     @FXML
     public void initialize() {
         dish1Spinner.setValueFactory(new SpinnerValueFactory.IntegerSpinnerValueFactory(1, 10, 1));
@@ -45,6 +41,7 @@ public class OrderController {
 
         if (dish1CheckBox.isSelected()) {
             int quantity = dish1Spinner.getValue();
+            int priceDish1 = 500;
             int cost = priceDish1 * quantity;
             receipt.append(String.format("Борщ: %d порций, %d ₽\n", quantity, cost));
             totalPrice += cost;
@@ -52,6 +49,7 @@ public class OrderController {
 
         if (dish2CheckBox.isSelected()) {
             int quantity = dish2Spinner.getValue();
+            int priceDish2 = 300;
             int cost = priceDish2 * quantity;
             receipt.append(String.format("Пельмеши: %d порций, %d ₽\n", quantity, cost));
             totalPrice += cost;
@@ -59,6 +57,7 @@ public class OrderController {
 
         if (dish3CheckBox.isSelected()) {
             int quantity = dish3Spinner.getValue();
+            int priceDish3 = 200;
             int cost = priceDish3 * quantity;
             receipt.append(String.format("Салат: %d порций, %d ₽\n", quantity, cost));
             totalPrice += cost;

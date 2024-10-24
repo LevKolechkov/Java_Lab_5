@@ -2,7 +2,6 @@ package org.example.lab_5;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
-import javafx.scene.control.CheckBox;
 import javafx.scene.control.Label;
 import javafx.scene.control.TextField;
 
@@ -15,15 +14,6 @@ public class WidgetsController {
 
     @FXML
     private Label label;
-
-    @FXML
-    private CheckBox textFieldCheckBox;
-
-    @FXML
-    private CheckBox buttonCheckBox;
-
-    @FXML
-    private CheckBox labelCheckBox;
 
     @FXML
     private void toggleTextFieldVisibility() {
